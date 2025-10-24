@@ -2,7 +2,7 @@ Aggregator berbasis Python (FastAPI) dengan idempotency, deduplication, dan pers
 
 youtube: https://youtu.be/UCnV7B-b8dc
 teori: https://docs.google.com/document/d/1Px_5KvLT47cLxEKdEYCHbQpv5q4sMYTi7Wsu3IzBSHg/edit?usp=sharing
-pdf: https://drive.google.com/file/d/1Iq78pl4wD3wnonzzYfU7TGNUMyPXtAkQ/view?usp=sharing
+pdf: https://drive.google.com/file/d/1Iq78pl4wD3wnonzzYfU7TGNUMyPXtAkQ/view?usp=drive_link
 
 ---
 
