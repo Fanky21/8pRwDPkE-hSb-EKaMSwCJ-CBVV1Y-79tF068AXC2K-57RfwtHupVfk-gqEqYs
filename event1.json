@@ -1,0 +1,1 @@
+{"topic": "order.created", "event_id": "evt-001", "timestamp": "2025-10-24T10:00:00Z", "source": "order-service", "payload": {"order_id": "12345", "amount": 150000}} 

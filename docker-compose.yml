@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  aggregator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: event-aggregator
+    ports:
+      - "8080:8080"
+    volumes:
+      # Persist dedup database
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - event-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/')"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    restart: unless-stopped
+    
+networks:
+  event-network:
+    driver: bridge
+
+volumes:
+  data:
